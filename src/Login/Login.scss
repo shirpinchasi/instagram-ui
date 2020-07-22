@@ -1,0 +1,43 @@
+
+
+*{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#ajust1{
+    width: 290px;
+    height: 390px;
+    background: linear-gradient(#BA5370,#F4E2D8);
+}
+.Login_title{
+    font-size: 40px;
+}
+label{
+    padding: 10px;
+}
+.text-center{
+    padding-top: 5px;
+    margin-left: 40px;
+}
+
+#username{
+    border-radius: 50px;
+    width: 250px;
+}
+#password{
+    border-radius: 50px;
+    width: 250px;
+}
+#button{
+    margin-top: 5px;
+    border-radius: 55px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 200px;
+    border: 1px solid white;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+

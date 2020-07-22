@@ -1,0 +1,17 @@
+.Avatar{
+    &.Avatar.sm{
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+    &.Avatar.md{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    &.Avatar.lg{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+}

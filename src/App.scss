@@ -1,0 +1,109 @@
+
+.navbar{
+    background: linear-gradient(49.2deg ,#9a0db6,#ee2a7b,#f9ca32,#f14a2d );
+    max-width: 100%;
+    display: flex;
+    position: sticky;
+    height: 70px;
+}
+
+
+.App__Loading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 99;
+    text-align: center;
+    padding-top: 100px;
+}
+@media screen and (max-width: 575px){
+    #instaimg{
+        display: none;
+    }
+    #avatarGradient{
+        margin-right: 20px;
+    }
+    
+    #profile{
+        margin-top: 30%;
+        padding-left: 25%;
+    }   
+}
+
+
+#Login{
+    margin-top: 20px;
+    
+    #image2{
+        padding: 20px;
+    }
+}
+//create post scss:
+.h2{
+    position: absolute;
+    margin-top: 10px;
+
+}
+#image{
+    position: relative;
+    width: auto;
+    left: 10px;
+    top: 7px;
+}
+
+#shadow-lg{
+    width: 700px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+#selectImg{
+    display: flex;
+    width: 600px;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+#desc{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40%;
+
+}
+#labelDesc{
+    position: absolute;
+    left: 10px;
+    margin-left: 20%;
+}
+
+#form-control{
+    border-radius: 50px;
+    border: 1px solid gray;
+    width: 65%;
+    position: absolute;
+    left: 70px;
+    top: 25px;
+
+}
+#avatarGradient{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 60%;
+    left:100px ;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    #avatarProfile{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+    }
+}
+
+
