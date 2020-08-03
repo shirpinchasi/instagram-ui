@@ -1,3 +1,3 @@
 export default {
-    apiUrl: "https://powerful-caverns-01689.herokuapp.com"
+    apiUrl: process.env.API_URL_PROD
 };
