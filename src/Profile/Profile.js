@@ -6,10 +6,13 @@ import Post from "../common/Post/Post";
 import ProfileUser from "./ProfileUser/ProfileUser";
 
 function Profile() {
-    const {id} = useParams();
+    const { id } = useParams();
     const [posts, setPosts] = useState([])
     
     useEffect(()=>{
+        if(!id) {
+            return;
+        }
         getPosts();
     }, [id]);
 
@@ -33,7 +36,7 @@ function Profile() {
         <div className="Profile">
             <ProfileUser userId={id} postsNum={posts.length}/>
             <hr className ="mx-3 my-4"/>
-            <div className="Posts">
+            <div className="d-flex flex-wrap col- ">
                 {posts.map(post=> <Post key={post._id} data={post}/>)}
             </div>
         </div>

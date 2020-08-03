@@ -14,6 +14,8 @@ import {UserContext} from "./user-context";
 import Feed from "./Feed/Feed";
 import Profile from './Profile/Profile';
 import Search from "./Search/Search";
+import PostPage from './common/Post/PostPage/PostPage';
+import Setting from "./Profile/ProfileUser/Setting/Setting";
 
 
 
@@ -39,9 +41,9 @@ function App() {
   return(
     <UserContext.Provider value = {{user,setUser}}>
       {isLoading && <div className="App__Loading">Loading...</div>}
-        <div className=".container .flex-row">
-        <div className="d-flex flex-column flex-sm-column-reverse vh-100 ">
-        <div className=".col- .col-md-12  flex-grow-1">
+        <div className=".container .flex-row ">
+        <div className="d-flex flex-column flex-sm-column-reverse vh-100  ">
+        <div className=".col-12  flex-grow-1">
             <Switch>
                 <Route path="/login">
                      <Login/>
@@ -49,11 +51,17 @@ function App() {
                 <Route path="/search">
                      <Search/>
                 </Route>
+                <Route path="/setting">
+                     <Setting/>
+                </Route>
                 <Route path ="/post/create">
                       <PostCreate/>
                 </Route>
                 <Route path ="/profile/:id">
                       <Profile/>
+                </Route>
+                <Route path ="/post/:id">
+                      <PostPage/>
                 </Route>
                 <Route path ="/register">
                       <Register/>

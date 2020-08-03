@@ -37,7 +37,7 @@ function Search(){
 
         return(
             <div id="Search">
-                <div id="search" className="col-12 col-lg-6">
+                <div id="search" className="col-12 col-lg-6 mt-3">
                     <input id="form-control"
                         placeholder="Search profile here.."
                         value={query}
@@ -46,7 +46,7 @@ function Search(){
                 </div>
                 <div className = "d-flex flex-wrap">
                     { hasNoResults()
-                    ?<div className="Search__no-results"><FontAwesomeIcon icon={faFrown} className="far fa-frown fa-lg"/><br/>No results found</div>
+                    ?<div className="Search__no-results"><FontAwesomeIcon icon={faFrown } className="far fa-frown fa-lg"/> No results found</div>
                     :users.map(user =><SearchResult user={user} key={user._id} />)
                     }
                 </div>

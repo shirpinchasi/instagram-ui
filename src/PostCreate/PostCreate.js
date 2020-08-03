@@ -20,19 +20,19 @@ function PostCreate() {
     };
 
     const submit = async (values) =>{
-        const data = buildFormData(values)
+        const data = buildFormData(values);
          await fetch(`${config.apiUrl}/posts`, {
             method : "PUT",
             credentials : "include",
             body : data
             
         });
-        history.push("/")
+        history.push("/");
     };
     
 
     return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex flex-wrap col-12 col-lg-10 col-md-8 col-s-5">
             <h2 className="h2">Create post</h2>
             <Formik
                 initialValues={{image: '', description: ''}}
@@ -52,7 +52,7 @@ function PostCreate() {
                             <div id="desc">
                             <div className="form-group" id="description">
                                 <label htmlFor="description" id="labelDesc">description:</label>
-                                <Field as={"textarea"} name="description" placeholder="" />
+                                <Field as="textarea" name="description" placeholder="" />
                             </div>
                             </div>
                             <div className="form-group text-center mt-4">

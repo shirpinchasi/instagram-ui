@@ -13,7 +13,7 @@ import MenuAvatar from "./MenuAvatar/MenuAvatar";
 
 
   return(
-		<div className=".container-fluid ">
+		<div className=".container-fluid">
     <nav className="navbar">
 			    <a className="navbar-brand" href="#" >
               <img src={intro} width="200" height="50" id="instaimg" className="instaimg d align-top" alt=""/>

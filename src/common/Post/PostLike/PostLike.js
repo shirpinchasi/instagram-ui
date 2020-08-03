@@ -1,4 +1,4 @@
-import React, { useContext,useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './PostLike.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -21,6 +21,7 @@ function PostLike(props) {
 			method: 'POST',
 			credentials: 'include'
 		});
+		console.log(likes);
 		return await response.json();
 	}
 
@@ -42,6 +43,7 @@ function PostLike(props) {
 			console.log(err);
 		}
 	}
+	console.log(hasUserLiked);
 
 	const likedClass = hasLiked ? 'PostLike__heart--liked' : '';
 
