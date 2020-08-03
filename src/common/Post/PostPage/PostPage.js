@@ -59,7 +59,7 @@ function PostPage (){
                             </Link>
                         </div>
                 </header>
-                <div className="Post__image">
+                <div className="Post__image ml-1">
 					<img src={buildImageUrl(post.image)} alt="post image"/>
 				</div>
 					<div className="Post__date">

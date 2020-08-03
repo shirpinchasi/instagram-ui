@@ -6,11 +6,13 @@ export const RegisterSchema = Yup.object().shape({
     username: Yup.string()
       .min(2, 'username is too short')
       .max(16, 'username is too long')
-      .required('Required'),
+      .required('Required')
+      .test('isUnique', 'Username is already taken', (value) => isUnique('username', value)),
     password: Yup.string()
       .min(6, 'Too Short!')
       .max(16, 'Too Long!')
-      .required('Required'),
+      .required('Required')
+      .test('isUnique', 'Email is in use', (value) => isUnique('email', value)),
     email: Yup.string()
       .email('Invalid email')
       .required('Required'),
