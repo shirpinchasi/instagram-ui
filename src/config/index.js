@@ -1,9 +1,9 @@
 import development from "./development";
 import production from "./production";
 
-let apiUrl = development;
+let env = development;
 if(process.env.NODE_ENV === "production"){
-    apiUrl = production;
+    env = production;
 }
 
 
