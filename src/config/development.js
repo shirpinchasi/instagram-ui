@@ -1,3 +1,3 @@
 export default{
-    apiUrl: process.env.API_URL_DEV
+    apiUrl: process.env.NODE_ENV
 };
